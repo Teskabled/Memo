@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.memotodo.R;
-import com.example.memotodo.utils.UserUtils;
 
 public class MainActivity extends BaseActivity {
 
@@ -24,7 +23,5 @@ public class MainActivity extends BaseActivity {
         //通过验证后跳转至TaskActivity
         Intent intent = new Intent(this, TaskActivity.class);
         startActivity(intent);
-        finish();
-
     }
 }

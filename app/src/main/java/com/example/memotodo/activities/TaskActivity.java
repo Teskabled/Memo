@@ -47,6 +47,7 @@ public class TaskActivity extends BaseActivity {
         }
 
         setContentView(R.layout.activity_task);
+        initNavBar(true,"任务列表", false);
         ((ListView)findViewById(R.id.listMain)).setAdapter(mAdapter = new TimeEntryAdapter(new ArrayList<TimeEntry>()));
         mAdapter.addAll(SpUtils.getCurrent());
 
