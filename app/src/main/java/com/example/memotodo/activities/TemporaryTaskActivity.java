@@ -138,7 +138,7 @@ public class TemporaryTaskActivity extends BaseActivity {
     TimeEntry getCurrentTimeEntry(){
         long elapsedTime = System.currentTimeMillis() -  startTime;
         if(cycleDuration <0){
-            cycleDuration=0;//获取周期总长度
+            cycleDuration=0;//获取周期 总长度
             for (TimeEntry entry:
                  entries) {
                 cycleDuration += entry.getDuration() * 1000L;
