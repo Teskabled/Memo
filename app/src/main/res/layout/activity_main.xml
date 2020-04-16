@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.memotodo.activities.MainActivity">
+
+    <include layout="@layout/nav_bar"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/itemHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        android:layout_gravity="center"
+        android:text="快速开始番茄"
+        android:textColor="@color/lineColor"
+        android:background="@drawable/btn_commit_select"
+        android:onClick="onStartTaskClick">
+
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MeActivity">
+
+    <include layout="@layout/nav_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemHeight">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemHeight"
+            android:gravity="center_horizontal"
+            android:text="昵称:"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemHeight"
+            android:text="积分："
+            android:gravity="center"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemHeight"
+            android:layout_marginTop="@dimen/marginSize"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textSize="@dimen/infoSize"
+            android:paddingLeft="@dimen/marginSize"
+            android:layout_gravity="center_vertical"
+            android:onClick="onChangePasswordClick"
+            android:background="@drawable/item_commit_select">
+
+        </TextView>
+
+        <Button
+            style="@style/commitBtn"
+            android:text="退出登录"
+            android:layout_marginTop="@dimen/marginSize"
+            android:onClick="onLogoutClick"
+            android:background="@drawable/btn_commit_select">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
