@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -24,12 +25,12 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.example.memotodo.R;
 import com.example.memotodo.model.TimeEntry;
 import com.example.memotodo.utils.AndroidUtils;
 import com.example.memotodo.utils.ICallback;
 import com.example.memotodo.utils.SpUtils;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,6 +63,7 @@ public class TaskActivity extends BaseActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        Log.e("xx","onCreateOptionsMenu");
         menu.add("预设").setIcon(R.mipmap.ic_menu_settings).setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
